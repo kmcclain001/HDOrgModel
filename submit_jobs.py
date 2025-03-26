@@ -88,7 +88,7 @@ def main():
         sb_path = create_sbatch(jobName,template_file,p_file,inputPath,iterDir)
         
         # submit
-        #subprocess.run(["sbatch", sb_path])
+        subprocess.run(["sbatch", sb_path])
         count = count+1
         
 
